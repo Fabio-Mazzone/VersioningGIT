@@ -19,3 +19,21 @@ class Dipendente:
         self.reparto = reparto
         self.stipendio = stipendio
 
+
+    def calcola_stipendio_annuale(self):   #metodo per calcolare lo stipendio annuale
+        stipendio_annuale = self.stipendio * 12 #12mesi
+        return stipendio_annuale
+    
+    def modifica_stipendio(self, nuovo_stipendio):  #metodo per modificare lo stipendio
+        self.stipendio = nuovo_stipendio
+    
+    def mostra_info(self):   #metodo per mostrare le informazioni del dipendente
+        
+        print("Nome: ", self.nome)
+        print("cognome: ", self.cognome)
+        print("ID: ", self.id_dipendente)
+        print("Reparto: ", self.reparto)
+        print("Stipendio: ", self.stipendio)
+        print("Stipendio annuale: ", self.calcola_stipendio_annuale())
+        
+
