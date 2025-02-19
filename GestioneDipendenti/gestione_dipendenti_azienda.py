@@ -36,4 +36,17 @@ class Dipendente:
         print("Stipendio: ", self.stipendio)
         print("Stipendio annuale: ", self.calcola_stipendio_annuale())
         
+#creazione dizionario per gestire i dipendenti, con chiave l'id del dipendente
+dipendenti = {}
 
+#funzione per inserire un nuovo dipendente
+def aggiungi_dipendente():
+    nome = input("Inserisci il nome del dipendente: ")
+    cognome = input("Inserisci il cognome del dipendente: ")
+    id_dipendente = input("Inserisci l'ID del dipendente: ")
+    reparto = input("Inserisci il reparto: ")
+    stipendio = float(input("Inserisci lo stipendio: "))
+    
+    nuovo_dipendente = Dipendente(nome, cognome, id_dipendente, reparto, stipendio)  #creazione di un oggetto di tipo dipendente
+    dipendenti[id_dipendente] = nuovo_dipendente
+    print("Dipendente aggiunto con successo!")
