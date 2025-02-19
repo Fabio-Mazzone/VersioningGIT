@@ -50,3 +50,13 @@ def aggiungi_dipendente():
     nuovo_dipendente = Dipendente(nome, cognome, id_dipendente, reparto, stipendio)  #creazione di un oggetto di tipo dipendente
     dipendenti[id_dipendente] = nuovo_dipendente
     print("Dipendente aggiunto con successo!")
+
+#funzione per visualizzare l'elenco dei dipendenti
+def mostra_tutti_dipendenti():
+    if not dipendenti:
+        print("Nessun dipendente registrato")    #se il dizionario è vuoto
+    else:           #se il dizionario non è vuoto
+        for dipendente in dipendenti.values(): # per ogni dipendente nel dizionario dei dipendenti1
+            dipendente.mostra_info()         # mostra le informazioni del dipendente
+        print("------------------------")
+
