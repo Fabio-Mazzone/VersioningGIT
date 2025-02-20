@@ -1,4 +1,7 @@
 # Changelog
+### [1.4.0] - 2025-02-20  
+### Added
+Creazione del menù interattivo 
 
 ### [1.3.0] - 2025-02-20
 ### Added
