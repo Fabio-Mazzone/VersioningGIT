@@ -93,3 +93,24 @@ def modifica_dipendente():              #funzione per modificare le informazioni
         print("Modifica effettuata con successo!")
     else:
         print("Dipendente non trovato.")
+
+
+
+while True:   #ciclo infinito
+    print("1. Aggiungi dipendente")  #menu
+    print("2. Mostra tutti i dipendenti")
+    print("3. Modifica dipendente")
+    
+    print("4. Esci")    
+    
+    scelta = input("Scegli un'opzione: ")  #chiede all'utente di scegliere un'opzione
+    
+    if scelta == "1":  #se l'utente sceglie 1
+        aggiungi_dipendente()  #richiama la funzione aggiungi_dipendente
+    elif scelta == "2":  #se l'utente sceglie 2
+        mostra_tutti_dipendenti()  #richiama la funzione mostra_tutti_dipendenti
+    elif scelta == "3":  #se l'utente sceglie 3
+        modifica_dipendente()  #richiama la funzione modifica_dipendente
+    
+    elif scelta == "4":
+        break #se l'utente sceglie 5 esce dal ciclo
