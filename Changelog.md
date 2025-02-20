@@ -1,5 +1,8 @@
 # Changelog
+### [1.3.0] - 2025-02-20
 
+### Fixed
+Funzione mostra_tutti_dipendenti
 
 ### [1.2.0] - 2025-02-19
 ### Added
