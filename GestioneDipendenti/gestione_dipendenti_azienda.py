@@ -59,4 +59,37 @@ def mostra_tutti_dipendenti():
         for dipendente in dipendenti.values(): # per ogni dipendente nel dizionario dei dipendenti1
             dipendente.mostra_info()         # mostra le informazioni del dipendente
         print("------------------------")
+
+
+#funzione per modificare le informazioni di un dipendente
+def modifica_dipendente():              #funzione per modificare le informazioni di un dipendente
+    id_dipendente = input("Inserisci l'ID del dipendente da modificare: ")   #chiede l'id del dipendente da modificare 
+    if id_dipendente in dipendenti:                     #se l'id del dipendente è presente nel dizionario dei dipendenti
+        print("1. Modificare Nome")                #chiede cosa si vuole modificare 
+        print("2. Modificare Cognome")
+        print("3. Modificare Reparto")            
+        print("4. Modificare Stipendio")
         
+        scelta = input("Scegli un'opzione: ")
+        
+        if scelta == "1":
+            nuovo_nome = input("Inserisci il nuovo nome: ")
+            dipendenti[id_dipendente].nome = nuovo_nome #modifica il nome del dipendente con il nuovo nome #.nome è l'attributo della classe dipendente
+        elif scelta == "2":
+            nuovo_cognome = input("Inserisci il nuovo cognome: ")
+            dipendenti[id_dipendente].cognome = nuovo_cognome
+        elif scelta == "3":
+            nuovo_reparto = input("Inserisci il nuovo reparto: ")
+            dipendenti[id_dipendente].reparto = nuovo_reparto
+        elif scelta == "4":
+            nuovo_stipendio = float(input("Inserisci il nuovo stipendio: "))
+            dipendenti[id_dipendente].modifica_stipendio(nuovo_stipendio)
+        
+
+
+        else:
+            print("Scelta non valida.")
+        
+        print("Modifica effettuata con successo!")
+    else:
+        print("Dipendente non trovato.")
