@@ -59,4 +59,9 @@ def mostra_tutti_dipendenti():
         for dipendente in dipendenti.values(): # per ogni dipendente nel dizionario dei dipendenti1
             dipendente.mostra_info()         # mostra le informazioni del dipendente
         print("------------------------")
+        
+        print("Fine elenco dipendenti)
+        print(piesellinerissimissimissimi)
+
+ 
 
