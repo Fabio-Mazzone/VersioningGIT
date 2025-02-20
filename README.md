@@ -29,11 +29,11 @@ Per eseguire il progetto, è necessario avere installato Python (versione 3.x).
    git clone https://github.com/Fabio-Mazzone/VersioningGIT.git
 2. Accedere alla cartella del progetto:
 
-   cd gestione-dipendenti
+   cd GestioneDipendenti
 
 3. Avviare il programma:
 
-    python main.py
+    python gestione_dipendenti_azienda.py
 
 # Uso del Programma
 Dopo l'avvio, il menu principale mostrerà le seguenti opzioni:
