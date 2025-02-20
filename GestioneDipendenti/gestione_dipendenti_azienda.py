@@ -60,8 +60,3 @@ def mostra_tutti_dipendenti():
             dipendente.mostra_info()         # mostra le informazioni del dipendente
         print("------------------------")
         
-        print("Fine elenco dipendenti)
-        print(piesellinerissimissimissimi)
-
- 
-
