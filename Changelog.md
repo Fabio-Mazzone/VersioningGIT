@@ -1,5 +1,9 @@
 # Changelog
+
 ### [1.3.0] - 2025-02-20
+### Added
+aggiunta funzione modifica_dipendente con relativo menù interattivo
+### [1.2.1] - 2025-02-20
 
 ### Fixed
 Funzione mostra_tutti_dipendenti
